@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "mod_spoofer",
+  "version": "${version}",
+  "name": "Mod Spoofer",
+  "description": "Server mod packet spoofer for testing server security",
+  "authors": [
+    "Copilot"
+  ],
+  "contact": {
+    "repo": "https://github.com/010100100010110/fabric-mod-spoofer"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.modspoofer.ModSpoofer"
+    ]
+  },
+  "mixins": [
+    "modspoofer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric": ">=0.141.0",
+    "minecraft": "1.21.1"
+  }
+}
